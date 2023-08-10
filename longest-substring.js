@@ -19,18 +19,12 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 */
 
 var lengthOfLongestSubstring = function (s) {
-  let longest = ''
+  let longest = []
 
   for (let i = 0; i < s.length; i++) {
     const slice = s.slice(i)
-    for (let j = 0; j < slice.length; j++) {
-      const prev = slice.slice(0, j)
-      console.log(prev)
-      const current = slice[j]
-      console.log(current)
-      if (prev.includes(current)) {
-        longest = prev
-      }
+    for (let j = slice.length; j > 0; j--) {
+      longest.push(slice.slice(0, j))
     }
   }
   console.log(longest)
