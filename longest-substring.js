@@ -34,4 +34,4 @@ var lengthOfLongestSubstring = function (s) {
     return length.length
   })
   return allLengths[0]
-}
+};
