@@ -9,7 +9,6 @@ var isPalindrome = function (x) {
 
 //Solution not converting to string
 var isPalindrome2 = function (x) {
-  let x = 543
   let total = 0
 
   while (true) {
